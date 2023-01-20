@@ -11,7 +11,7 @@ input.onButtonPressed(Button.AB, function () {
     music.playMelody("B C5 E D E A G F ", 120)
 })
 input.onButtonPressed(Button.B, function () {
-	
+    basic.showString("will you be my valentine")
 })
 input.onGesture(Gesture.Shake, function () {
     music.playSoundEffect(music.createSoundEffect(
