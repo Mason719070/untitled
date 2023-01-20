@@ -16,10 +16,10 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
     music.setVolume(200)
     music.playSoundEffect(music.createSoundEffect(
-    WaveShape.Sine,
+    WaveShape.Noise,
+    1,
     5000,
-    1034,
-    255,
+    0,
     255,
     9999,
     SoundExpressionEffect.None,
