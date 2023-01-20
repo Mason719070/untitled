@@ -14,6 +14,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showString("Dakshin sucks him")
 })
 input.onGesture(Gesture.Shake, function () {
+    pins.digitalWritePin(DigitalPin.P0, 0)
     music.setVolume(200)
     music.playSoundEffect(music.createSoundEffect(
     WaveShape.Noise,
