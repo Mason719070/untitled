@@ -14,6 +14,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showString("will you be my valentine")
 })
 input.onGesture(Gesture.Shake, function () {
+    music.setVolume(200)
     music.playSoundEffect(music.createSoundEffect(
     WaveShape.Sine,
     5000,
@@ -24,6 +25,7 @@ input.onGesture(Gesture.Shake, function () {
     SoundExpressionEffect.None,
     InterpolationCurve.Linear
     ), SoundExpressionPlayMode.UntilDone)
+    basic.clearScreen()
 })
 basic.showLeds(`
     . . # . .
