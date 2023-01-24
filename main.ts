@@ -7,19 +7,22 @@ input.onButtonPressed(Button.A, function () {
         . . # . .
         `)
 })
+input.onGesture(Gesture.TiltLeft, function () {
+    music.ringTone(262)
+})
 input.onButtonPressed(Button.AB, function () {
-    music.playMelody("B C5 E D E A G F ", 120)
+    music.playMelody("B C5 E - D A G F ", 120)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Dakshin sucks him")
+    basic.showString("l   o   v  e")
 })
 input.onGesture(Gesture.Shake, function () {
     pins.digitalWritePin(DigitalPin.P0, 0)
     music.setVolume(200)
     music.playSoundEffect(music.createSoundEffect(
-    WaveShape.Noise,
-    1,
-    5000,
+    WaveShape.Sine,
+    3279,
+    1461,
     0,
     255,
     9999,
